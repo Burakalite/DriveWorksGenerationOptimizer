@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3EFFFE9C-4882-4C30-BE1A-94F6CFF64C49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DWGenerationOptimizer", "DWGenerationOptimizer\DWGenerationOptimizer.csproj", "{C9DC251C-A4B7-4377-A255-5D4750E3641E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwGenerationOptimizer", "DWGenerationOptimizer\DwGenerationOptimizer.csproj", "{C9DC251C-A4B7-4377-A255-5D4750E3641E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

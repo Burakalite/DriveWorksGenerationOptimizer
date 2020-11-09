@@ -7,7 +7,7 @@ using SolidWorks.Interop.sldworks;
 
 namespace BlueGiant
 {    
-    public class GenerationSpeedOptimizer
+    public class SwGenerationOptimizer
     {
         [DllImport("user32.dll")]
         static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
@@ -21,8 +21,8 @@ namespace BlueGiant
 
             try
             {
-                var app = StartSwAppBackground(SW_PATH);
-                Console.WriteLine("BlueGiant.AutopilotOptimizer: SolidWorks Running in Background");
+                var app = StartSwAppGenerationOptimized(SW_PATH);
+                Console.WriteLine("BlueGiant.SwGenerationOptimizer - SolidWorks running in backgroud and ready for generation");
             }
             catch (Exception ex)
             {
@@ -32,7 +32,7 @@ namespace BlueGiant
             Console.ReadLine();
         }
 
-        private static ISldWorks StartSwAppBackground(string appPath, int timeoutSec = 20)
+        private static ISldWorks StartSwAppGenerationOptimized(string appPath, int timeoutSec = 20)
         {
             var timeout = TimeSpan.FromSeconds(timeoutSec);
             var startTime = DateTime.Now;
@@ -40,7 +40,6 @@ namespace BlueGiant
             var prcInfo = new ProcessStartInfo()
             {
                 FileName = appPath,
-                //Arguments = "/r", //no splash screen
                 CreateNoWindow = true,
                 WindowStyle = ProcessWindowStyle.Hidden
             };
