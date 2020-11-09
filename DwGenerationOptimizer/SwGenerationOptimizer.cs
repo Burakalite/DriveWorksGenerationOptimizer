@@ -22,7 +22,7 @@ namespace BlueGiant
             try
             {
                 var app = StartSwAppGenerationOptimized(SW_PATH);
-                Console.WriteLine("BlueGiant.SwGenerationOptimizer - SolidWorks running in backgroud and ready for generation");
+                Console.WriteLine("BlueGiant.SwGenerationOptimizer - SolidWorks running in background and ready for generation");
             }
             catch (Exception ex)
             {
